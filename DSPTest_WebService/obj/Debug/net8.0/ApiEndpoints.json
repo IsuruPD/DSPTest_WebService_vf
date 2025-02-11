@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "DSPTest_WebService.Controllers.PowerUsageController",
+    "Method": "GetCustomerAnalysis",
+    "RelativePath": "api/PowerUsage/{customerName}/analysis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSPTest_WebService.Controllers.PowerUsageController",
+    "Method": "GetHighestPeak",
+    "RelativePath": "api/PowerUsage/{customerName}/highest-peak",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSPTest_WebService.Controllers.PowerUsageController",
+    "Method": "GetPeakCount",
+    "RelativePath": "api/PowerUsage/{customerName}/peaks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DSPTest_WebService.Controllers.PowerUsageController",
+    "Method": "GetCustomerUsage",
+    "RelativePath": "api/PowerUsage/{customerName}/usage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

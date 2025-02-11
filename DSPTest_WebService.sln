@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSPTest_WebService", "DSPTest_WebService\DSPTest_WebService.csproj", "{779F88AC-56DF-4247-A12C-825FE281FD9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{779F88AC-56DF-4247-A12C-825FE281FD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{779F88AC-56DF-4247-A12C-825FE281FD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{779F88AC-56DF-4247-A12C-825FE281FD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{779F88AC-56DF-4247-A12C-825FE281FD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E0D3223-D8E5-43E9-99B9-BDB47E96A051}
+	EndGlobalSection
+EndGlobal

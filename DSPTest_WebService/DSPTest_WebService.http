@@ -1,0 +1,6 @@
+@DSPTest_WebService_HostAddress = http://localhost:5052
+
+GET {{DSPTest_WebService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
