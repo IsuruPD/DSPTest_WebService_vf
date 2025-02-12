@@ -8,19 +8,19 @@ namespace DSPTest_WebService.Controllers
     [Route("api/[controller]")]
     public class PowerUsageController : ControllerBase
     {
-        private readonly PowerUsageService _powerUsageService;
+        private readonly PowerUsageService powerUsageService;
 
         public PowerUsageController(PowerUsageService powerUsageService)
         {
-            _powerUsageService = powerUsageService;
+            this.powerUsageService = powerUsageService;
         }
 
-        [HttpGet("{customerName}/usage")]
+        [HttpGet("{customerName}/regular-usage")]
         public async Task<IActionResult> GetCustomerUsage(string customerName)
         {
             try
             {
-                var data = await _powerUsageService.GetCustomerUsageDataAsync(customerName);
+                var data = await powerUsageService.GetCustomerUsageData(customerName);
                 return Ok(data);
             }
             catch (Exception ex)
@@ -29,13 +29,13 @@ namespace DSPTest_WebService.Controllers
             }
         }
 
-        [HttpGet("{customerName}/peaks")]
+        [HttpGet("{customerName}/peaks-count")]
         public async Task<IActionResult> GetPeakCount(string customerName)
         {
             try
             {
-                var data = await _powerUsageService.GetCustomerUsageDataAsync(customerName);
-                var peakCount = _powerUsageService.CalculatePeaks(data.Select(x => x.Consumption).ToList());
+                var data = await powerUsageService.GetCustomerUsageData(customerName);
+                var peakCount = powerUsageService.CalculatePeaks(data.Select(x => x.Consumption).ToList());
                 return Ok(peakCount);
             }
             catch (Exception ex)
@@ -49,8 +49,8 @@ namespace DSPTest_WebService.Controllers
         {
             try
             {
-                var data = await _powerUsageService.GetCustomerUsageDataAsync(customerName);
-                var highestPeak = _powerUsageService.FindHighestPeak(data.Select(x => x.Consumption).ToList());
+                var data = await powerUsageService.GetCustomerUsageData(customerName);
+                var highestPeak = powerUsageService.FindHighestPeak(data.Select(x => x.Consumption).ToList());
                 return Ok(highestPeak);
             }
             catch (Exception ex)
@@ -59,27 +59,17 @@ namespace DSPTest_WebService.Controllers
             }
         }
 
-        [HttpGet("{customerName}/analysis")]
-        public async Task<IActionResult> GetCustomerAnalysis(string customerName)
+        [HttpGet("{customerName}/hourly-consumption")]
+        public async Task<IActionResult> GetHourlyPowerConsumption(string customerName)
         {
             try
             {
-                var usageData = await _powerUsageService.GetCustomerUsageDataAsync(customerName);
-                var consumptionData = usageData.Select(x => x.Consumption).ToList();
-
-                var analysis = new CustomerPeakAnalysis
-                {
-                    CustomerName = customerName,
-                    PeakCount = _powerUsageService.CalculatePeaks(consumptionData),
-                    HighestPeak = _powerUsageService.FindHighestPeak(consumptionData),
-                    UsageData = usageData
-                };
-
-                return Ok(analysis);
+                var hourlyConsumption = await powerUsageService.GetHourlyPowerConsumption(customerName);
+                return Ok(hourlyConsumption);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error performing analysis: {ex.Message}");
+                return StatusCode(500, $"Error calculating hourly power consumption: {ex.Message}");
             }
         }
     }

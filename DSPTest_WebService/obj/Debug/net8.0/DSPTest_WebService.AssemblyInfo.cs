@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DSPTest_WebService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa1cd4477149fa8e851566173cca1f9622cee37c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DSPTest_WebService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DSPTest_WebService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

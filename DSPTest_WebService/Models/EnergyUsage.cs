@@ -1,6 +1,6 @@
 ﻿namespace DSPTest_WebService.Models
 {
-    public class PowerUsage
+    public class EnergyUsage
     {
         public DateTime Time { get; set; }
         public double Consumption { get; set; }

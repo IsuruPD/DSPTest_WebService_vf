@@ -5,19 +5,19 @@ namespace DSPTest_WebService.Services
 {
     public class PowerUsageService
     {
-        private readonly string _connectionString;
+        private string connectionString;
 
         public PowerUsageService(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public async Task<List<PowerUsage>> GetCustomerUsageDataAsync(string customerName)
+        public async Task<List<EnergyUsage>> GetCustomerUsageData(string customerName)
         {
-            var usageData = new List<PowerUsage>();
+            var usageData = new List<EnergyUsage>();
             string query = $"SELECT Time, [{customerName}] FROM tbl_customer_usage ORDER BY Time";
 
-            using var connection = new SqlConnection(_connectionString);
+            using var connection = new SqlConnection(connectionString);
             await connection.OpenAsync();
             using var command = new SqlCommand(query, connection);
             using var reader = await command.ExecuteReaderAsync();
@@ -26,7 +26,7 @@ namespace DSPTest_WebService.Services
             {
                 if (!reader.IsDBNull(1))
                 {
-                    usageData.Add(new PowerUsage
+                    usageData.Add(new EnergyUsage
                     {
                         Time = Convert.ToDateTime(reader[0]),
                         Consumption = Convert.ToDouble(reader[1])
@@ -61,6 +61,40 @@ namespace DSPTest_WebService.Services
                 }
             }
             return maxPeak == double.MinValue ? 0 : maxPeak;
+        }
+
+        public async Task<List<HourlyPowerConsumption>> GetHourlyPowerConsumption(string customerName)
+        {
+            var usageData = await GetCustomerUsageData(customerName);
+            var hourlyPower = new Dictionary<int, double>();
+
+            for (int i = 0; i < usageData.Count - 1; i++)
+            {
+                DateTime time1 = usageData[i].Time;
+                DateTime time2 = usageData[i + 1].Time;
+                double energy1 = usageData[i].Consumption;
+                double energy2 = usageData[i + 1].Consumption;
+
+                double timeDiff = (time2 - time1).TotalMinutes / 60.0;
+
+                double power = ((energy1 + energy2) / 2) * timeDiff;
+
+                int hour = time1.Hour;
+                if (!hourlyPower.ContainsKey(hour))
+                {
+                    hourlyPower[hour] = 0;
+                }
+                hourlyPower[hour] += power;
+            }
+
+            return hourlyPower
+                .Select(hp => new HourlyPowerConsumption
+                {
+                    Hour = hp.Key,
+                    PowerConsumption = Math.Round(hp.Value, 2)
+                })
+                .OrderBy(x => x.Hour)
+                .ToList();
         }
     }
 }

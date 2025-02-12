@@ -84,3 +84,4 @@ D:\DSP\Training\DSPTest_WebService\DSPTest_WebService\DSPTest_WebService\obj\Deb
 D:\DSP\Training\DSPTest_WebService\DSPTest_WebService\DSPTest_WebService\obj\Debug\net8.0\DSPTest_WebService.pdb
 D:\DSP\Training\DSPTest_WebService\DSPTest_WebService\DSPTest_WebService\obj\Debug\net8.0\DSPTest_WebService.genruntimeconfig.cache
 D:\DSP\Training\DSPTest_WebService\DSPTest_WebService\DSPTest_WebService\obj\Debug\net8.0\ref\DSPTest_WebService.dll
+D:\DSP\Training\DSPTest_WebService\DSPTest_WebService\DSPTest_WebService\obj\Debug\net8.0\DSPTest_WebService.sourcelink.json

@@ -7,24 +7,12 @@
       "RelativeMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|solutionrelative:dsptest_webservice\\controllers\\powerusagecontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|d:\\dsp\\training\\dsptest_webservice\\dsptest_webservice\\dsptest_webservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|solutionrelative:dsptest_webservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|d:\\dsp\\training\\dsptest_webservice\\dsptest_webservice\\dsptest_webservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|solutionrelative:dsptest_webservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|d:\\dsp\\training\\dsptest_webservice\\dsptest_webservice\\dsptest_webservice\\models\\powerusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|solutionrelative:dsptest_webservice\\models\\powerusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|d:\\dsp\\training\\dsptest_webservice\\dsptest_webservice\\dsptest_webservice\\services\\powerusageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|solutionrelative:dsptest_webservice\\services\\powerusageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|d:\\dsp\\training\\dsptest_webservice\\dsptest_webservice\\dsptest_webservice\\models\\customerpeakanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|solutionrelative:dsptest_webservice\\models\\customerpeakanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|d:\\dsp\\training\\dsptest_webservice\\dsptest_webservice\\dsptest_webservice\\models\\energyusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779F88AC-56DF-4247-A12C-825FE281FD9B}|DSPTest_WebService\\DSPTest_WebService.csproj|solutionrelative:dsptest_webservice\\models\\energyusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +32,7 @@
               "RelativeDocumentMoniker": "DSPTest_WebService\\Controllers\\PowerUsageContoller.cs",
               "ToolTip": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Controllers\\PowerUsageContoller.cs",
               "RelativeToolTip": "DSPTest_WebService\\Controllers\\PowerUsageContoller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T18:08:01.458Z",
               "EditorCaption": ""
@@ -52,64 +40,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Program.cs",
-              "RelativeDocumentMoniker": "DSPTest_WebService\\Program.cs",
-              "ToolTip": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Program.cs",
-              "RelativeToolTip": "DSPTest_WebService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T18:05:53.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\appsettings.json",
-              "RelativeDocumentMoniker": "DSPTest_WebService\\appsettings.json",
-              "ToolTip": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\appsettings.json",
-              "RelativeToolTip": "DSPTest_WebService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-11T18:05:26.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "PowerUsageService.cs",
               "DocumentMoniker": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Services\\PowerUsageService.cs",
               "RelativeDocumentMoniker": "DSPTest_WebService\\Services\\PowerUsageService.cs",
               "ToolTip": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Services\\PowerUsageService.cs",
               "RelativeToolTip": "DSPTest_WebService\\Services\\PowerUsageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T18:01:58.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomerPeakAnalysis.cs",
-              "DocumentMoniker": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Models\\CustomerPeakAnalysis.cs",
-              "RelativeDocumentMoniker": "DSPTest_WebService\\Models\\CustomerPeakAnalysis.cs",
-              "ToolTip": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Models\\CustomerPeakAnalysis.cs",
-              "RelativeToolTip": "DSPTest_WebService\\Models\\CustomerPeakAnalysis.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:58:35.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PowerUsage.cs",
-              "DocumentMoniker": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Models\\PowerUsage.cs",
-              "RelativeDocumentMoniker": "DSPTest_WebService\\Models\\PowerUsage.cs",
-              "ToolTip": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Models\\PowerUsage.cs",
-              "RelativeToolTip": "DSPTest_WebService\\Models\\PowerUsage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EnergyUsage.cs",
+              "DocumentMoniker": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Models\\EnergyUsage.cs",
+              "RelativeDocumentMoniker": "DSPTest_WebService\\Models\\EnergyUsage.cs",
+              "ToolTip": "D:\\DSP\\Training\\DSPTest_WebService\\DSPTest_WebService\\DSPTest_WebService\\Models\\EnergyUsage.cs",
+              "RelativeToolTip": "DSPTest_WebService\\Models\\EnergyUsage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T17:57:57.933Z",
               "EditorCaption": ""
