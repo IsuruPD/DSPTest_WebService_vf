@@ -70,21 +70,21 @@ namespace DSPTest_WebService.Services
 
             for (int i = 0; i < usageData.Count - 1; i++)
             {
-                DateTime time1 = usageData[i].Time;
-                DateTime time2 = usageData[i + 1].Time;
-                double energy1 = usageData[i].Consumption;
-                double energy2 = usageData[i + 1].Consumption;
+                DateTime t1 = usageData[i].Time;
+                DateTime t2 = usageData[i + 1].Time;
+                double p1 = usageData[i].Consumption;
+                double p2 = usageData[i + 1].Consumption;
 
-                double timeDiff = (time2 - time1).TotalMinutes / 60.0;
+                double timeDiff = (t2 - t1).TotalMinutes / 60.0;
 
-                double power = ((energy1 + energy2) / 2) * timeDiff;
+                double hourlypower = ((p1 + p2) / 2) * timeDiff;
 
-                int hour = time1.Hour;
+                int hour = t1.Hour;
                 if (!hourlyPower.ContainsKey(hour))
                 {
                     hourlyPower[hour] = 0;
                 }
-                hourlyPower[hour] += power;
+                hourlyPower[hour] += hourlypower;
             }
 
             return hourlyPower
